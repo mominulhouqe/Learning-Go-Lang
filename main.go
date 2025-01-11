@@ -4,6 +4,13 @@ import (
 	"fmt"
 )
 
+func add(num1 int, num2 int) {
+	var sum = num1 + num2
+
+	fmt.Println("This is total", sum)
+
+}
+
 func main() {
 	// fmt.Println("hello world")
 
@@ -23,16 +30,22 @@ func main() {
 
 	*/
 
-	var name = 243
+	// var name = 243
 
-	if name >= 32 {
-		fmt.Println("This is biggest number")
+	// if name >= 32 {
+	// 	fmt.Println("This is biggest number")
 
-	} else if name <= 34 {
-		fmt.Println("This is lowest number", +name)
-	} else {
-		fmt.Println("Not this exucuted")
-	}
+	// } else if name <= 34 {
+	// 	fmt.Println("This is lowest number", +name)
+	// } else {
+	// 	fmt.Println("Not this exucuted")
+	// }
 	//
+
+	// Function learning
+
+	const a = 19
+	const b = 13
+	add(a, b)
 
 }
