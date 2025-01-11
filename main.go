@@ -47,5 +47,7 @@ func main() {
 	const a = 19
 	const b = 13
 	add(a, b)
+	add(389, 354)
+	add(342, 67)
 
 }
