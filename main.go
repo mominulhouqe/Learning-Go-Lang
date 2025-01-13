@@ -73,11 +73,55 @@ package main
 
 import "fmt"
 
-func sayHello(name string) {
-	fmt.Println("Wellcome free course,", name)
+func printWelcomeMessage() {
+	fmt.Println("Welcome To the course")
+}
+
+func gettingName() string {
+	var name string
+	fmt.Println("Enter your Name - ")
+	fmt.Scanln(&name)
+	return name
+
+}
+
+func getNumber() (int, int) {
+
+	var num1 int
+	var num2 int
+	fmt.Println("Enter Your 1st Number - ")
+	fmt.Scanln(&num1)
+	fmt.Println("Enter Your 2nd Number - ")
+	fmt.Scanln(&num2)
+	return num1, num2
+
+}
+
+func add(num1 int, num2 int) (int int) {
+	sum := num1 + num2
+	return sum
+}
+
+func displayMessage(name string, sum int) {
+
+	fmt.Println("Hello", name)
+	fmt.Println("Total sum", sum)
+
+}
+func welcomeMesage() {
+	fmt.Println("Thank you using this functional App-")
 }
 
 func main() {
-	sayHello("Mominul Houqe")
+
+	printWelcomeMessage()
+	name := gettingName()
+
+	num1, num2 := getNumber()
+
+	sum := add(num1, num2)
+
+	displayMessage(name, sum)
+	welcomeMesage()
 
 }
